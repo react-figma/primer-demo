@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     background: {
         position: "absolute",
         borderRadius: 26,
-        backgroundColor: colors.persimmon,
+        backgroundColor: colors.green,
         top: 0,
         left: 0,
         width: "100%",
@@ -33,11 +33,11 @@ const styles = StyleSheet.create({
 
 const hoverStyles = StyleSheet.create({
     text: {
-        color: colors.persimmon
+        color: colors.white
     },
     background: {
         backgroundColor: colors.white,
-        borderColor: colors.persimmon,
+        borderColor: colors.green,
         borderWidth: 2
     }
 });
