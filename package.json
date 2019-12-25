@@ -1,0 +1,54 @@
+{
+  "name": "primer-design-system",
+  "version": "1.0.0",
+  "description": "Boilerplate app for react-figma",
+  "main": "./src/code.tsx",
+  "scripts": {
+    "storybook": "start-storybook",
+    "figma:webpack:watch": "webpack --config figma.webpack.config.js --watch ",
+    "build": "build-storybook -o public"
+  },
+  "engines": {
+    "node": ">=10.16.2 <12.0.0"
+  },
+  "keywords": [
+    "react",
+    "react-figma",
+    "react-figma-boilerplate",
+    "figma",
+    "figma-plugins"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/losyear/react-figma-boilerplate.git"
+  },
+  "author": "Ilia Lesik <ilialesik@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "react": "^16.9.0",
+    "react-docgen-typescript-loader": "^3.6.0",
+    "react-figma": "0.0.38",
+    "react-native": "^0.61.5",
+    "react-native-web": "^0.11.7",
+    "yoga-layout-prebuilt": "^1.9.3"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-info": "^5.2.6",
+    "@storybook/addon-knobs": "^5.2.6",
+    "@storybook/addon-notes": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "@types/react-native": "^0.60.23",
+    "babel-loader": "^8.0.6",
+    "html-webpack-inline-source-plugin": "^0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "react-figma-webpack-config": "0.0.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
+}
