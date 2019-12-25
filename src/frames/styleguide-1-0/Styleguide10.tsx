@@ -17,11 +17,14 @@ const styles = StyleSheet.create({
         paddingBottom: 82
     },
     colorsContainer: {
+        maxWidth: 1040,
         flexDirection: "row",
         marginTop: 35,
+        flexWrap: "wrap"
     },
     colorWrapper: {
-        marginLeft: 36
+        marginRight: 36,
+        marginTop: 18
     },
     separator: {
         marginTop: 22
@@ -46,7 +49,7 @@ export const Styleguide10 = (props) => {
             <StyleguideLabel text="Colors" />
             <StyleguideSeparator style={styles.separator} />
             <View style={styles.colorsContainer}>
-                <StyleguideColor color={colors.gray} />
+                <StyleguideColor color={colors.gray} style={styles.colorWrapper} />
                 <StyleguideColor color={colors.blue} style={styles.colorWrapper} />
                 <StyleguideColor color={colors.green} style={styles.colorWrapper} />
                 <StyleguideColor color={colors.purple} style={styles.colorWrapper} />
