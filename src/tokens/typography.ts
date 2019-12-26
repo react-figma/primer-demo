@@ -1,64 +1,75 @@
-import {StyleSheet, Platform} from "react-native";
+import {StyleSheet} from "react-native";
+
+export const typeScale = {
+    "00": 48,
+    "0": 40,
+    "1": 32,
+    "2": 24,
+    "3": 20,
+    "4": 16,
+    "5": 14,
+    "6": 12
+};
 
 export const typography = StyleSheet.create({
     HeadingH1: {
         fontFamily: "SF Pro Display",
-        fontSize: 43,
-        fontWeight: "bold",
-        lineHeight: 1.05,
-        letterSpacing: -1
+        fontSize: typeScale["1"],
+        fontWeight: "600",
     },
     HeadingH2: {
         fontFamily: "SF Pro Display",
-        fontSize: 34,
-        // @ts-ignore
-        fontWeight: (Platform.OS === "figma" ? "semibold" : "600" as any),
-        lineHeight: 1.15
+        fontSize: typeScale["2"],
+        fontWeight: "600"
     },
     HeadingH3: {
         fontFamily: "SF Pro Display",
-        fontSize: 28,
-        fontWeight: "bold",
-        lineHeight: 1.04
+        fontSize: typeScale["3"],
+        fontWeight: "600",
     },
     HeadingH4: {
         fontFamily: "SF Pro Display",
-        fontSize: 24,
-        fontWeight: "bold",
-        lineHeight: 1.08,
-        letterSpacing: -0.11
+        fontSize: typeScale["4"],
+        fontWeight: "600",
     },
     HeadingH5: {
         fontFamily: "SF Pro Display",
-        fontSize: 21,
-        fontWeight: "bold",
-        lineHeight: 1.24,
-        letterSpacing: -0.11
+        fontSize: typeScale["5"],
+        fontWeight: "600"
     },
     HeadingH6: {
         fontFamily: "SF Pro Display",
-        fontSize: 18,
-        // @ts-ignore
-        fontWeight: (Platform.OS === "figma" ? "semibold" : "600" as any),
-        lineHeight: 1.22
+        fontSize: typeScale["6"],
+        fontWeight: "600"
     },
-    PMedium: {
+    Paragraph1: {
         fontFamily: "SF Pro Display",
-        fontSize: 21,
-        lineHeight: 1.24
+        fontSize: typeScale["1"],
+        fontWeight: "normal",
     },
-    PNormal: {
+    Paragraph2: {
         fontFamily: "SF Pro Display",
-        fontSize: 16,
-        lineHeight: 1.44
+        fontSize: typeScale["2"],
+        fontWeight: "normal"
     },
-    PSmall: {
+    Paragraph3: {
         fontFamily: "SF Pro Display",
-        fontSize: 14,
-        lineHeight: 1.36
+        fontSize: typeScale["3"],
+        fontWeight: "normal",
     },
-    PXSmall: {
+    Paragraph4: {
         fontFamily: "SF Pro Display",
-        fontSize: 13
+        fontSize: typeScale["4"],
+        fontWeight: "normal",
+    },
+    Paragraph5: {
+        fontFamily: "SF Pro Display",
+        fontSize: typeScale["5"],
+        fontWeight: "normal"
+    },
+    Paragraph6: {
+        fontFamily: "SF Pro Display",
+        fontSize: typeScale["6"],
+        fontWeight: "normal"
     }
 });

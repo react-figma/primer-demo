@@ -97,22 +97,31 @@ export const Styleguide10 = (props) => {
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>H6/left</Text>}
                     typography={<Text style={typography.HeadingH6}>Sample text</Text>} />
+
                 <TypographyContainer
                     style={styles.typographyContainer}
-                    label={<Text style={styleguideTypography.label}>P/medium</Text>}
-                    typography={<Text style={typography.PMedium}>Sample text</Text>} />
+                    label={<Text style={styleguideTypography.label}>P1/left</Text>}
+                    typography={<Text style={[typography.Paragraph1, {width: 460}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
-                    label={<Text style={styleguideTypography.label}>P/normal</Text>}
-                    typography={<Text style={typography.PNormal}>Sample text</Text>} />
+                    label={<Text style={styleguideTypography.label}>P2/left</Text>}
+                    typography={<Text style={[typography.Paragraph2, {width: 460}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
-                    label={<Text style={styleguideTypography.label}>P/small</Text>}
-                    typography={<Text style={typography.PSmall}>Sample text</Text>} />
+                    label={<Text style={styleguideTypography.label}>P3/left</Text>}
+                    typography={<Text style={typography.Paragraph3}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
-                    label={<Text style={styleguideTypography.label}>P/xsmall</Text>}
-                    typography={<Text style={typography.PXSmall}>Sample text</Text>} />
+                    label={<Text style={styleguideTypography.label}>P4/left</Text>}
+                    typography={<Text style={typography.Paragraph4}>Sample text</Text>} />
+                <TypographyContainer
+                    style={styles.typographyContainer}
+                    label={<Text style={styleguideTypography.label}>P5/left</Text>}
+                    typography={<Text style={typography.Paragraph5}>Sample text</Text>} />
+                <TypographyContainer
+                    style={styles.typographyContainer}
+                    label={<Text style={styleguideTypography.label}>P6/left</Text>}
+                    typography={<Text style={typography.Paragraph6}>Sample text</Text>} />
             </View>
         </View>
     </Frame>
