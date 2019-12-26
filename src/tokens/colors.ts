@@ -16,6 +16,8 @@ export const colors = {
     // Other colors
     blue: "#0366d6",
     green: "#28a745",
+    green400: "#34d058",
+    green500: "#28a745",
     purple: "#6f42c1",
     yellow: "#ffd33d",
     orange: "#f66a0a",

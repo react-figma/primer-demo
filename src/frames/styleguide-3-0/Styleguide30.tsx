@@ -32,19 +32,7 @@ export const Styleguide30 = (props) => {
                 <StyleguideLabel text="Buttons" />
             </StyleguideSeparatorWrapper>
             <View style={styles.buttonsLine}>
-                <PrimaryButton>More</PrimaryButton>
-                <PrimaryButton isHover style={{marginLeft: 80}}>More</PrimaryButton>
-                <PrimaryButton isDisabled style={{marginLeft: 80}}>More</PrimaryButton>
-            </View>
-            <View style={styles.buttonsLine}>
-                <PrimaryButton isLarge>More</PrimaryButton>
-                <PrimaryButton isLarge isHover style={{marginLeft: 80}}>More</PrimaryButton>
-                <PrimaryButton isLarge isDisabled style={{marginLeft: 80}}>More</PrimaryButton>
-            </View>
-            <View style={styles.buttonsLine}>
-                <PrimaryButton isGrayscale isLarge>More</PrimaryButton>
-                <PrimaryButton isGrayscale isLarge isHover style={{marginLeft: 80}}>More</PrimaryButton>
-                <PrimaryButton isGrayscale isLarge isDisabled style={{marginLeft: 80}}>More</PrimaryButton>
+                <PrimaryButton>Primary button</PrimaryButton>
             </View>
         </View>
     </Frame>
