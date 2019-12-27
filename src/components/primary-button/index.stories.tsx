@@ -9,8 +9,6 @@ storiesOf('Button', module)
     .addDecorator(withInfo)
     .addDecorator(withKnobs)
     .add('Primary Button', () => <PrimaryButton
-        isDisabled={boolean("isDisabled", false)}
-        isGrayscale={boolean("isGrayscale", false)}
-        isLarge={boolean("isLarge", false)}>
+        isDisabled={boolean("isDisabled", false)}>
         {text("children", "Подробнее")}
     </PrimaryButton>);

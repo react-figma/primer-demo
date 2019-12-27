@@ -28,7 +28,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "react": "^16.9.0",
     "react-docgen-typescript-loader": "^3.6.0",
-    "react-figma": "0.0.41",
+    "react-figma": "0.0.42",
     "react-native": "^0.61.5",
     "react-native-web": "^0.11.7",
     "yoga-layout-prebuilt": "^1.9.3"
