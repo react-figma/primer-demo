@@ -3,6 +3,7 @@ import {StyleSheet, Frame, View, Text} from "react-figma";
 import {StyleguideLabel} from "../../components/styleguide-label/StyleguideLabel";
 import {StyleguideSeparatorWrapper} from "../../components/styleguide-separator/StyleguideSeparatorWrapper";
 import {PrimaryButton} from "../../components/primary-button/PrimaryButton";
+import {DefaultButton} from "../../components/default-button/DefaultButton";
 
 const styles = StyleSheet.create({
     frame: {
@@ -31,6 +32,9 @@ export const Styleguide30 = (props) => {
             <StyleguideSeparatorWrapper>
                 <StyleguideLabel text="Buttons" />
             </StyleguideSeparatorWrapper>
+            <View style={styles.buttonsLine}>
+                <DefaultButton>Button</DefaultButton>
+            </View>
             <View style={styles.buttonsLine}>
                 <PrimaryButton>Primary button</PrimaryButton>
             </View>
