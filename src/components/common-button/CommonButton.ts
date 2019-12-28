@@ -31,3 +31,24 @@ export const commonButtonStyle = StyleSheet.create({
         borderColor: "rgba(27,31,35,0.2)"
     }
 });
+
+export const commonButtonSmallStyle = StyleSheet.create({
+    container: {
+        height: 28
+    },
+    text: {
+        fontSize: typeScale["6"],
+        lineHeight: 1.66,
+        marginTop: 3 + borderSize,
+        marginBottom: 3 + borderSize,
+        marginLeft: 10 + borderSize,
+        marginRight: 10 + borderSize
+    }
+});
+
+export interface IButtonCommon {
+    children: string;
+    isDisabled?: boolean;
+    isHover?: boolean;
+    isSmall?: boolean
+}

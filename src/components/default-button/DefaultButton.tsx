@@ -1,8 +1,7 @@
 import * as React from "react";
 import {StyleSheet, View, Text} from "react-native";
 import {colors} from "../../tokens/colors";
-import {typeScale} from "../../tokens/typography";
-import {commonButtonStyle} from "../common-button/CommonButton";
+import {commonButtonSmallStyle, commonButtonStyle, IButtonCommon} from "../common-button/CommonButton";
 
 const styles = StyleSheet.create({
     ...commonButtonStyle,
@@ -27,15 +26,12 @@ const hoverStyles = StyleSheet.create({
     }
 });
 
-export interface IDefaultButtonCommon {
-    children: string,
-    isDisabled?: boolean
-}
+export interface IDefaultButtonCommon extends IButtonCommon {}
 
-export const DefaultButton = (props: {isHover?: boolean,style?: any} & IDefaultButtonCommon) => {
-    const {style, children, isHover} = props;
-    return <View style={[styles.container, style]}>
+export const DefaultButton = (props: {style?: any} & IDefaultButtonCommon) => {
+    const {style, children, isHover, isSmall} = props;
+    return <View style={[styles.container, isSmall && commonButtonSmallStyle.container, style]}>
         <View style={[styles.background, isHover && hoverStyles.background]} />
-        <Text style={[styles.text, isHover && hoverStyles.text]}>{children}</Text>
+        <Text style={[styles.text, isSmall && commonButtonSmallStyle.text, isHover && hoverStyles.text]}>{children}</Text>
     </View>
 };

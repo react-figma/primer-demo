@@ -14,16 +14,9 @@ const styles = StyleSheet.create({
     },
     buttonsLine: {
         flexDirection: "row",
-        marginTop: 40
-    },
-    underlineButtonsContainer: {
-        flexDirection: "row",
-        marginTop: 73
-    },
-    arrowButtonsContainer: {
-        flexDirection: "row",
-        marginTop: 56
-    },
+        marginTop: 40,
+        alignItems: "center"
+    }
 });
 
 export const Styleguide30 = (props) => {
@@ -34,9 +27,11 @@ export const Styleguide30 = (props) => {
             </StyleguideSeparatorWrapper>
             <View style={styles.buttonsLine}>
                 <DefaultButton>Button</DefaultButton>
+                <DefaultButton isSmall style={{marginLeft: 20}}>Small button</DefaultButton>
             </View>
             <View style={styles.buttonsLine}>
                 <PrimaryButton>Primary button</PrimaryButton>
+                <PrimaryButton isSmall style={{marginLeft: 20}}>Small primary button</PrimaryButton>
             </View>
         </View>
     </Frame>
