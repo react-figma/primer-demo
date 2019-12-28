@@ -5,18 +5,20 @@ import {typeScale} from "../../tokens/typography";
 
 const styles = StyleSheet.create({
     container: {
-        minWidth: 124,
-        height: 32,
         justifyContent: "center",
         alignItems: "center"
     },
     text: {
         fontFamily: "SF Pro Text",
-        fontWeight: "600",
+        fontWeight: "bold",
         fontSize: typeScale["5"],
         textAlign: "center",
         color: colors.white,
-        zIndex: 1
+        zIndex: 1,
+        marginTop: 6,
+        marginBottom: 6,
+        marginLeft: 12,
+        marginRight: 12
     },
     background: {
         position: "absolute",
