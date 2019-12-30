@@ -31,6 +31,7 @@ export const Styleguide30 = (props) => {
             </View>
             <View style={styles.buttonsLine}>
                 <PrimaryButton>Primary button</PrimaryButton>
+                <PrimaryButton isFocus style={{marginLeft: 20}}>Primary button</PrimaryButton>
                 <PrimaryButton isSmall style={{marginLeft: 20}}>Small primary button</PrimaryButton>
             </View>
         </View>

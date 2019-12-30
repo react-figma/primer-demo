@@ -15,23 +15,19 @@ const styles = StyleSheet.create({
     }
 });
 
-const hoverStyles = StyleSheet.create({
-    text: {
-        color: colors.white
-    },
+const focusStyles = StyleSheet.create({
     background: {
-        backgroundColor: colors.white,
-        borderColor: colors.green,
-        borderWidth: 2
+        shadowColor: "rgba(52,208,88,0.4)",
+        shadowRadius: 3.2
     }
 });
 
 export interface IPrimaryButtonCommon extends IButtonCommon {}
 
-export const PrimaryButton = (props: {isHover?: boolean,style?: any} & IPrimaryButtonCommon) => {
-    const {style, children, isHover, isSmall} = props;
+export const PrimaryButton = (props: {isFocus?: boolean, isHover?: boolean,style?: any} & IPrimaryButtonCommon) => {
+    const {style, children, isHover, isFocus, isSmall} = props;
     return <View style={[styles.container, isSmall && commonButtonSmallStyle.container, style]}>
-        <View style={[styles.background, isHover && hoverStyles.background]} />
-        <Text style={[styles.text, isSmall && commonButtonSmallStyle.text, isHover && hoverStyles.text]}>{children}</Text>
+        <View style={[styles.background, isFocus && focusStyles.background]} />
+        <Text style={[styles.text, isSmall && commonButtonSmallStyle.text]}>{children}</Text>
     </View>
 };
