@@ -11,7 +11,7 @@ export const commonButtonStyle = StyleSheet.create({
     text: {
         fontFamily: "SF Pro Text",
         fontWeight: "bold",
-        fontSize: typeScale["5"],
+        fontSize: typeScale.size5,
         lineHeight: 1.42,
         textAlign: "center",
         zIndex: 1,
@@ -37,7 +37,7 @@ export const commonButtonSmallStyle = StyleSheet.create({
         height: 28
     },
     text: {
-        fontSize: typeScale["6"],
+        fontSize: typeScale.size6,
         lineHeight: 1.66,
         marginTop: 3 + borderSize,
         marginBottom: 3 + borderSize,
