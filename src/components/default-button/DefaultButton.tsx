@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     },
     background: {
         ...commonButtonStyle.background,
-        backgroundColor: `linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%)`,
+        backgroundImage: `linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%)`,
     }
 });
 

@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     },
     background: {
         ...commonButtonStyle.background,
-        backgroundColor: `linear-gradient(-180deg, ${colors.green400} 0%, ${colors.green500} 90%)`,
+        backgroundImage: `linear-gradient(-180deg, ${colors.green400} 0%, ${colors.green500} 90%)`,
     }
 });
 
