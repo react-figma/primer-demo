@@ -4,6 +4,7 @@ import {StyleguideLabel} from "../../components/styleguide-label/StyleguideLabel
 import {StyleguideSeparatorWrapper} from "../../components/styleguide-separator/StyleguideSeparatorWrapper";
 import {PrimaryButton} from "../../components/primary-button/PrimaryButton";
 import {DefaultButton} from "../../components/default-button/DefaultButton";
+import {DangerButton} from "../../components/danger-button/DangerButton";
 
 const styles = StyleSheet.create({
     frame: {
@@ -16,6 +17,9 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         marginTop: 40,
         alignItems: "center"
+    },
+    buttonMargin: {
+        marginLeft: 20
     }
 });
 
@@ -27,12 +31,16 @@ export const Styleguide30 = (props) => {
             </StyleguideSeparatorWrapper>
             <View style={styles.buttonsLine}>
                 <DefaultButton>Button</DefaultButton>
-                <DefaultButton isSmall style={{marginLeft: 20}}>Small button</DefaultButton>
+                <DefaultButton isSmall style={styles.buttonMargin}>Small button</DefaultButton>
             </View>
             <View style={styles.buttonsLine}>
                 <PrimaryButton>Primary button</PrimaryButton>
-                <PrimaryButton isFocus style={{marginLeft: 20}}>Primary button</PrimaryButton>
-                <PrimaryButton isSmall style={{marginLeft: 20}}>Small primary button</PrimaryButton>
+                <PrimaryButton isFocus style={styles.buttonMargin}>Primary button</PrimaryButton>
+                <PrimaryButton isSmall style={styles.buttonMargin}>Small primary button</PrimaryButton>
+            </View>
+            <View style={styles.buttonsLine}>
+                <DangerButton>Danger button</DangerButton>
+                <DangerButton isSmall style={styles.buttonMargin}>Small danger button</DangerButton>
             </View>
         </View>
     </Frame>
