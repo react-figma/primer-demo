@@ -1,12 +1,13 @@
-import {StyleSheet} from "react-native";
+import {StyleSheet} from "react-figma";
 import {typeScale} from "../../tokens/typography";
 
 const borderSize = 1;
 
-export const commonButtonStyle = StyleSheet.create({
+export const commonButtonStyle = {
     container: {
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        height: 32
     },
     text: {
         fontFamily: "SF Pro Text",
@@ -15,8 +16,6 @@ export const commonButtonStyle = StyleSheet.create({
         lineHeight: 1.42,
         textAlign: "center",
         zIndex: 1,
-        marginTop: 6 + borderSize,
-        marginBottom: 6 + borderSize,
         marginLeft: 12 + borderSize,
         marginRight: 12 + borderSize
     },
@@ -30,7 +29,7 @@ export const commonButtonStyle = StyleSheet.create({
         borderWidth: 1,
         borderColor: "rgba(27,31,35,0.2)"
     }
-});
+};
 
 export const commonButtonSmallStyle = StyleSheet.create({
     container: {
@@ -39,8 +38,6 @@ export const commonButtonSmallStyle = StyleSheet.create({
     text: {
         fontSize: typeScale.size6,
         lineHeight: 1.66,
-        marginTop: 3 + borderSize,
-        marginBottom: 3 + borderSize,
         marginLeft: 10 + borderSize,
         marginRight: 10 + borderSize
     }

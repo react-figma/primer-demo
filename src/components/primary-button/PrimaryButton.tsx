@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
         ...commonButtonStyle.background,
         backgroundImage: `linear-gradient(-180deg, ${colors.green400} 0%, ${colors.green500} 90%)`,
     }
-});
+} as any);
 
 const focusStyles = StyleSheet.create({
     background: {

@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
         ...commonButtonStyle.background,
         backgroundImage: `linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%)`,
     }
-});
+} as any);
 
 const hoverStyles = StyleSheet.create({
     text: {

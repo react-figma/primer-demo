@@ -29,7 +29,7 @@
     "react": "^16.9.0",
     "react-docgen-typescript-loader": "^3.6.0",
     "react-dom": "16.9.0",
-    "react-figma": "0.0.43",
+    "react-figma": "0.0.44",
     "react-native": "^0.61.5",
     "react-native-web": "^0.11.7",
     "yoga-layout-prebuilt": "^1.9.3"
@@ -41,7 +41,7 @@
     "@storybook/addon-notes": "^5.2.6",
     "@storybook/addons": "^5.2.6",
     "@storybook/react": "^5.2.6",
-    "@types/react-native": "^0.60.23",
+    "@types/react-native": "0.60.28",
     "babel-loader": "^8.0.6",
     "html-webpack-inline-source-plugin": "^0.0.10",
     "html-webpack-plugin": "^3.2.0",
