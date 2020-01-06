@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
     }
 });
 
-export const Styleguide30 = (props) => {
-    return <Frame name="Styleguide 3-0" style={[styles.frame, props.style]}>
+export const Styleguide20 = (props) => {
+    return <Frame name="Styleguide 2-0" style={[styles.frame, props.style]}>
         <View style={{marginTop: 69}}>
             <StyleguideSeparatorWrapper>
                 <StyleguideLabel text="Buttons" />
