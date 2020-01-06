@@ -7,11 +7,11 @@ const styles = StyleSheet.create({
     ...commonButtonStyle,
     text: {
         ...commonButtonStyle.text,
-        color: colors.red600,
+        color: "#0366d6",
     },
     background: {
         ...commonButtonStyle.background,
-        backgroundImage: `linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%)`,
+        backgroundColor: colors.white
     }
 } as any);
 
@@ -26,9 +26,9 @@ const hoverStyles = StyleSheet.create({
     }
 });
 
-export interface IDangerButtonCommon extends IButtonCommon {}
+export interface IOutlineButtonCommon extends IButtonCommon {}
 
-export const DangerButton = (props: {style?: any} & IDangerButtonCommon) => {
+export const OutlineButton = (props: {style?: any} & IOutlineButtonCommon) => {
     const {style, children, isHover, isSmall} = props;
     return <View style={[styles.container, isSmall && commonButtonSmallStyle.container, style]}>
         <View style={[styles.background, isHover && hoverStyles.background]} />

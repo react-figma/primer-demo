@@ -5,6 +5,7 @@ import {StyleguideSeparatorWrapper} from "../../components/styleguide-separator/
 import {PrimaryButton} from "../../components/primary-button/PrimaryButton";
 import {DefaultButton} from "../../components/default-button/DefaultButton";
 import {DangerButton} from "../../components/danger-button/DangerButton";
+import {OutlineButton} from "../../components/outline-button/OutlineButton";
 
 const styles = StyleSheet.create({
     frame: {
@@ -41,6 +42,10 @@ export const Styleguide20 = (props) => {
             <View style={styles.buttonsLine}>
                 <DangerButton>Danger button</DangerButton>
                 <DangerButton isSmall style={styles.buttonMargin}>Small danger button</DangerButton>
+            </View>
+            <View style={styles.buttonsLine}>
+                <OutlineButton>Outline button</OutlineButton>
+                <OutlineButton isSmall style={styles.buttonMargin}>Outline button</OutlineButton>
             </View>
         </View>
     </Frame>
