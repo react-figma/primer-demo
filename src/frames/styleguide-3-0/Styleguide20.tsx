@@ -4,6 +4,7 @@ import {StyleguideLabel} from "../../components/styleguide-label/StyleguideLabel
 import {StyleguideSeparatorWrapper} from "../../components/styleguide-separator/StyleguideSeparatorWrapper";
 import {GistLogo} from "../../components/icons/GistLogo";
 import {GitHubLogo} from "../../components/icons/GitHubLogo";
+import {GitHubMark} from "../../components/icons/GitHubMark";
 
 const styles = StyleSheet.create({
     frame: {
@@ -31,6 +32,7 @@ export const Styleguide30 = (props) => {
             <View style={styles.iconsLine}>
                 <GistLogo style={styles.iconMargin} />
                 <GitHubLogo style={styles.iconMargin} />
+                <GitHubMark style={styles.iconMargin} />
             </View>
         </View>
     </Frame>
