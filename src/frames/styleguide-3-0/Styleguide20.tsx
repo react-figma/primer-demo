@@ -3,6 +3,7 @@ import {StyleSheet, Frame, View, Text} from "react-figma";
 import {StyleguideLabel} from "../../components/styleguide-label/StyleguideLabel";
 import {StyleguideSeparatorWrapper} from "../../components/styleguide-separator/StyleguideSeparatorWrapper";
 import {GistLogo} from "../../components/icons/GistLogo";
+import {GitHubLogo} from "../../components/icons/GitHubLogo";
 
 const styles = StyleSheet.create({
     frame: {
@@ -15,6 +16,9 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         marginTop: 40,
         alignItems: "center"
+    },
+    iconMargin: {
+        marginRight: 20
     }
 });
 
@@ -25,7 +29,8 @@ export const Styleguide30 = (props) => {
                 <StyleguideLabel text="Logos" />
             </StyleguideSeparatorWrapper>
             <View style={styles.iconsLine}>
-                <GistLogo />
+                <GistLogo style={styles.iconMargin} />
+                <GitHubLogo style={styles.iconMargin} />
             </View>
         </View>
     </Frame>
