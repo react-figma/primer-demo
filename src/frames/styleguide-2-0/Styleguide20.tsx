@@ -7,6 +7,7 @@ import {DefaultButton} from "../../components/default-button/DefaultButton";
 import {DangerButton} from "../../components/danger-button/DangerButton";
 import {OutlineButton} from "../../components/outline-button/OutlineButton";
 import {Flash} from "../../components/flash/Flash";
+import {FlashText} from "../../components/flash/FlashText";
 
 const styles = StyleSheet.create({
     frame: {
@@ -62,7 +63,28 @@ export const Styleguide20 = (props) => {
             </View>
             <View style={styles.alertLine}>
                 <Flash>
-                    <Text style={styles.alertText}>Flash message goes here.</Text>
+                    <FlashText>Flash message goes here.</FlashText>
+                </Flash>
+            </View>
+            <View style={styles.alertLine}>
+                <Flash>
+                    <FlashText>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</FlashText>
+                    <FlashText style={{marginTop: 10}}>And this is another paragraph.</FlashText>
+                </Flash>
+            </View>
+            <View style={styles.alertLine}>
+                <Flash isWarn>
+                    <FlashText isWarn>Flash message goes here.</FlashText>
+                </Flash>
+            </View>
+            <View style={styles.alertLine}>
+                <Flash isError>
+                    <FlashText isError>Flash message goes here.</FlashText>
+                </Flash>
+            </View>
+            <View style={styles.alertLine}>
+                <Flash isSuccess>
+                    <FlashText isSuccess>Flash message goes here.</FlashText>
                 </Flash>
             </View>
         </View>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import {StyleSheet, View, Text} from "react-native";
+import {StyleSheet, View} from "react-native";
 import {colors} from "../../tokens/colors";
 import {spacingScale} from "../../tokens/spacingScale";
 
@@ -20,10 +20,33 @@ const styles = StyleSheet.create({
     }
 });
 
-export const Flash = (props: {children: React.ReactNode}) => {
-    const {children} = props;
+const warnStyles = StyleSheet.create({
+    background: {
+        backgroundColor: colors.yellow100,
+    }
+});
+
+const errorStyles = StyleSheet.create({
+    background: {
+        backgroundColor: colors.red100,
+    }
+});
+
+const successStyles = StyleSheet.create({
+    background: {
+        backgroundColor: colors.green100,
+    }
+});
+
+export const Flash = (props: {children: React.ReactNode, isWarn?: boolean, isError?: boolean, isSuccess?: boolean}) => {
+    const {children, isWarn, isError, isSuccess} = props;
     return <View style={styles.container}>
-        <View style={styles.background} />
+        <View style={[
+            styles.background,
+            isWarn && warnStyles.background,
+            isError && errorStyles.background,
+            isSuccess && successStyles.background
+        ]} />
         <View style={styles.content}>
             {children}
         </View>
