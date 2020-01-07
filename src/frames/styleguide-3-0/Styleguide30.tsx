@@ -7,6 +7,7 @@ import {GitHubLogo} from "../../components/icons/GitHubLogo";
 import {GitHubMark} from "../../components/icons/GitHubMark";
 import {Markdown} from "../../components/icons/Markdown";
 import {Octoface} from "../../components/icons/Octoface";
+import {Paintcan} from "../../components/icons/Paintcan";
 
 const styles = StyleSheet.create({
     frame: {
@@ -37,6 +38,7 @@ export const Styleguide30 = (props) => {
                 <GitHubMark style={styles.iconMargin} />
                 <Markdown style={styles.iconMargin} />
                 <Octoface style={styles.iconMargin} />
+                <Paintcan style={styles.iconMargin} />
             </View>
         </View>
     </Frame>

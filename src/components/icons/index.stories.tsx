@@ -7,6 +7,7 @@ import {GitHubLogo} from "./GitHubLogo";
 import {GitHubMark} from "./GitHubMark";
 import {Markdown} from "./Markdown";
 import {Octoface} from "./Octoface";
+import {Paintcan} from "./Paintcan";
 
 
 storiesOf('Icons', module)
@@ -16,4 +17,5 @@ storiesOf('Icons', module)
     .add('GitHub Logo', () => <GitHubLogo/>)
     .add('GitHub Mark', () => <GitHubMark/>)
     .add('Markdown', () => <Markdown/>)
-    .add('Octoface', () => <Octoface/>);
+    .add('Octoface', () => <Octoface/>)
+    .add('Paintcan', () => <Paintcan/>);
