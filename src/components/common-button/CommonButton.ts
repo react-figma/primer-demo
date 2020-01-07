@@ -1,4 +1,4 @@
-import {StyleSheet} from "react-figma";
+import {StyleSheet} from "react-native";
 import {typeScale} from "../../tokens/typography";
 
 const borderSize = 1;

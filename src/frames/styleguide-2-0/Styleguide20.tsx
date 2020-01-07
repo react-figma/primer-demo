@@ -6,6 +6,7 @@ import {PrimaryButton} from "../../components/primary-button/PrimaryButton";
 import {DefaultButton} from "../../components/default-button/DefaultButton";
 import {DangerButton} from "../../components/danger-button/DangerButton";
 import {OutlineButton} from "../../components/outline-button/OutlineButton";
+import {Flash} from "../../components/flash/Flash";
 
 const styles = StyleSheet.create({
     frame: {
@@ -21,6 +22,13 @@ const styles = StyleSheet.create({
     },
     buttonMargin: {
         marginLeft: 20
+    },
+    alertLine: {
+        marginTop: 40
+    },
+    alertText: {
+        fontFamily: "SF Pro Display",
+        fontSize: 14,
     }
 });
 
@@ -46,6 +54,16 @@ export const Styleguide20 = (props) => {
             <View style={styles.buttonsLine}>
                 <OutlineButton>Outline button</OutlineButton>
                 <OutlineButton isSmall style={styles.buttonMargin}>Outline button</OutlineButton>
+            </View>
+            <View style={{marginTop: 40}}>
+                <StyleguideSeparatorWrapper>
+                    <StyleguideLabel text="Alerts" />
+                </StyleguideSeparatorWrapper>
+            </View>
+            <View style={styles.alertLine}>
+                <Flash>
+                    <Text style={styles.alertText}>Flash message goes here.</Text>
+                </Flash>
             </View>
         </View>
     </Frame>
