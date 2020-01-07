@@ -5,6 +5,7 @@ import { withInfo } from '@storybook/addon-info';
 import {GistLogo} from "./GistLogo";
 import {GitHubLogo} from "./GitHubLogo";
 import {GitHubMark} from "./GitHubMark";
+import {Markdown} from "./Markdown";
 
 
 storiesOf('Icons', module)
@@ -12,4 +13,5 @@ storiesOf('Icons', module)
     .addDecorator(withKnobs)
     .add('Gist Logo', () => <GistLogo/>)
     .add('GitHub Logo', () => <GitHubLogo/>)
-    .add('GitHub Mark', () => <GitHubMark/>);
+    .add('GitHub Mark', () => <GitHubMark/>)
+    .add('Markdown', () => <Markdown/>);
