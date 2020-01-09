@@ -5,7 +5,7 @@ import WrapToWebButton from "../../helpers/WrapToWebButton";
 const PrimaryButton = (props: {onClick?: () => void} & IPrimaryButtonCommon) => {
     const {onClick, children, ...otherProps} = props;
     return <WrapToWebButton onClick={onClick}>
-        {({isHover}) => <PrimaryButtonPrototype isHover={isHover} {...otherProps}>
+        {({isHover, isFocus}) => <PrimaryButtonPrototype isFocus={isFocus} isHover={isHover} {...otherProps}>
             {children}
         </PrimaryButtonPrototype>}
     </WrapToWebButton>
