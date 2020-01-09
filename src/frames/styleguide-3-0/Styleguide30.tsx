@@ -1,5 +1,5 @@
 import * as React from "react";
-import {StyleSheet, Frame, View, Text} from "react-figma";
+import {StyleSheet, Frame, View, Text, Component} from "react-figma";
 import {StyleguideLabel} from "../../components/styleguide-label/StyleguideLabel";
 import {StyleguideSeparatorWrapper} from "../../components/styleguide-separator/StyleguideSeparatorWrapper";
 import {GistLogo} from "../../components/icons/GistLogo";
@@ -79,12 +79,16 @@ const styles = StyleSheet.create({
     iconsLine: {
         flexDirection: "row",
         marginTop: 40,
-        alignItems: "center",
-        maxWidth: 1040,
+        alignItems: "flex-start",
+        maxWidth: 660,
         flexWrap: "wrap"
     },
-    iconMargin: {
-        marginRight: 20
+    iconComponent: {
+        marginBottom: 20,
+        marginRight: 20,
+        minWidth: 16,
+        maxHeight: 16,
+        justifyContent: "center"
     }
 });
 
@@ -95,12 +99,24 @@ export const Styleguide30 = (props) => {
                 <StyleguideLabel text="Logos" />
             </StyleguideSeparatorWrapper>
             <View style={styles.iconsLine}>
-                <GistLogo style={styles.iconMargin} />
-                <GitHubLogo style={styles.iconMargin} />
-                <GitHubMark style={styles.iconMargin} />
-                <Markdown style={styles.iconMargin} />
-                <Octoface style={styles.iconMargin} />
-                <Paintcan style={styles.iconMargin} />
+                <Component name="logo-gist" style={styles.iconComponent}>
+                    <GistLogo />
+                </Component>
+                <Component name="logo-github" style={styles.iconComponent}>
+                    <GitHubLogo />
+                </Component>
+                <Component name="logo-github-mark" style={styles.iconComponent}>
+                    <GitHubMark />
+                </Component>
+                <Component name="logo-markdown" style={styles.iconComponent}>
+                    <Markdown />
+                </Component>
+                <Component name="logo-octoface" style={styles.iconComponent}>
+                    <Octoface />
+                </Component>
+                <Component name="logo-paintcan" style={styles.iconComponent}>
+                    <Paintcan />
+                </Component>
             </View>
             <View style={{marginTop: 80}}>
                 <StyleguideSeparatorWrapper>
@@ -108,16 +124,36 @@ export const Styleguide30 = (props) => {
                 </StyleguideSeparatorWrapper>
             </View>
             <View style={styles.iconsLine}>
-                <Thumbsdown style={styles.iconMargin} />
-                <Smiley style={styles.iconMargin} />
-                <GistSecret style={styles.iconMargin} />
-                <Thumbsup style={styles.iconMargin} />
-                <Hubot style={styles.iconMargin} />
-                <Organization style={styles.iconMargin} />
-                <Person style={styles.iconMargin} />
-                <Eye style={styles.iconMargin} />
-                <EyeClosed style={styles.iconMargin} />
-                <Jersey style={styles.iconMargin} />
+                <Component name="icon-thumbsdown" style={styles.iconComponent}>
+                    <Thumbsdown />
+                </Component>
+                <Component name="icon-smiley" style={styles.iconComponent}>
+                    <Smiley />
+                </Component>
+                <Component name="icon-gist-secret" style={styles.iconComponent}>
+                    <GistSecret />
+                </Component>
+                <Component name="icon-thumbsup" style={styles.iconComponent}>
+                    <Thumbsup />
+                </Component>
+                <Component name="icon-hubot" style={styles.iconComponent}>
+                    <Hubot />
+                </Component>
+                <Component name="icon-organization" style={styles.iconComponent}>
+                    <Organization />
+                </Component>
+                <Component name="icon-person" style={styles.iconComponent}>
+                    <Person />
+                </Component>
+                <Component name="icon-eye" style={styles.iconComponent}>
+                    <Eye  />
+                </Component>
+                <Component name="icon-eye-closed" style={styles.iconComponent}>
+                    <EyeClosed />
+                </Component>
+                <Component name="icon-jersey" style={styles.iconComponent}>
+                    <Jersey />
+                </Component>
             </View>
             <View style={{marginTop: 80}}>
                 <StyleguideSeparatorWrapper>
@@ -125,57 +161,156 @@ export const Styleguide30 = (props) => {
                 </StyleguideSeparatorWrapper>
             </View>
             <View style={styles.iconsLine}>
-                <Code style={styles.iconMargin} />
-                <DiffAdded style={styles.iconMargin} />
-                <DiffIgnored style={styles.iconMargin} />
-                <Gist style={styles.iconMargin} />
-                <DiffModified style={styles.iconMargin} />
-                <DiffRemoved style={styles.iconMargin} />
-                <GitCommit style={styles.iconMargin} />
-                <DiffRenamed style={styles.iconMargin} />
-                <GitCompare style={styles.iconMargin} />
-                <Diff style={styles.iconMargin} />
-                <GitBranch style={styles.iconMargin} />
-                <GitMerge style={styles.iconMargin} />
-                <Database style={styles.iconMargin} />
-                <GitPullRequest style={styles.iconMargin} />
-                <IssueClosed style={styles.iconMargin} />
-                <IssueOpened style={styles.iconMargin} />
-                <IssueReopened style={styles.iconMargin} />
-                <CircuitBoard style={styles.iconMargin} />
-                <NoNewLine style={styles.iconMargin} />
-                <Broadcast style={styles.iconMargin} />
-                <Keyboard style={styles.iconMargin} />
-                <FileZip style={styles.iconMargin} />
-                <FileBinary style={styles.iconMargin} />
-                <FileBinary style={styles.iconMargin} />
-                <FileCode style={styles.iconMargin} />
-                <FileDirectory style={styles.iconMargin} />
-                <FileMedia style={styles.iconMargin} />
-                <FilePdf style={styles.iconMargin} />
-                <FileSubmodule style={styles.iconMargin} />
-                <FileSymlinkDirectory style={styles.iconMargin} />
-                <FileSymlinkFile style={styles.iconMargin} />
-                <Browser style={styles.iconMargin} />
-                <File style={styles.iconMargin} />
-                <RepoClone style={styles.iconMargin} />
-                <RepoForcePush style={styles.iconMargin} />
-                <RepoForked style={styles.iconMargin} />
-                <RepoPull style={styles.iconMargin} />
-                <RepoPush style={styles.iconMargin} />
-                <Repo style={styles.iconMargin} />
-                <Ruby style={styles.iconMargin} />
-                <Mirror style={styles.iconMargin} />
-                <Server style={styles.iconMargin} />
-                <Terminal style={styles.iconMargin} />
-                <RadioTower style={styles.iconMargin} />
-                <Rss style={styles.iconMargin} />
-                <Versions style={styles.iconMargin} />
-                <Dependent style={styles.iconMargin} />
-                <RepoTemplate style={styles.iconMargin} />
-                <RepoTemplatePrivate style={styles.iconMargin} />
-                <Workflow style={styles.iconMargin} />
-                <WorkflowAll style={styles.iconMargin} />
+                <Component name="icon-code" style={styles.iconComponent}>
+                    <Code />
+                </Component>
+                <Component name="icon-diff-added" style={styles.iconComponent}>
+                    <DiffAdded  />
+                </Component>
+                <Component name="icon-diff-ignored" style={styles.iconComponent}>
+                    <DiffIgnored  />
+                </Component>
+                <Component name="icon-gist" style={styles.iconComponent}>
+                    <Gist />
+                </Component>
+                <Component name="icon-diff-modified" style={styles.iconComponent}>
+                    <DiffModified />
+                </Component>
+                <Component name="icon-diff-removed" style={styles.iconComponent}>
+                    <DiffRemoved />
+                </Component>
+                <Component name="icon-git-commit" style={styles.iconComponent}>
+                    <GitCommit />
+                </Component>
+                <Component name="icon-diff-renamed" style={styles.iconComponent}>
+                    <DiffRenamed />
+                </Component>
+                <Component name="icon-git-compare" style={styles.iconComponent}>
+                    <GitCompare />
+                </Component>
+                <Component name="icon-diff" style={styles.iconComponent}>
+                    <Diff />
+                </Component>
+                <Component name="icon-git-branch" style={styles.iconComponent}>
+                    <GitBranch />
+                </Component>
+                <Component name="icon-git-merge" style={styles.iconComponent}>
+                    <GitMerge />
+                </Component>
+                <Component name="icon-database" style={styles.iconComponent}>
+                    <Database />
+                </Component>
+                <Component name="icon-git-pull-request" style={styles.iconComponent}>
+                    <GitPullRequest />
+                </Component>
+                <Component name="icon-issue-closed" style={styles.iconComponent}>
+                    <IssueClosed />
+                </Component>
+                <Component name="icon-issue-opened" style={styles.iconComponent}>
+                    <IssueOpened />
+                </Component>
+                <Component name="icon-issue-reopened" style={styles.iconComponent}>
+                    <IssueReopened />
+                </Component>
+                <Component name="icon-circuit-board" style={styles.iconComponent}>
+                    <CircuitBoard />
+                </Component>
+                <Component name="icon-no-new-line" style={styles.iconComponent}>
+                    <NoNewLine />
+                </Component>
+                <Component name="icon-broadcast" style={styles.iconComponent}>
+                    <Broadcast />
+                </Component>
+                <Component name="icon-keyboard" style={styles.iconComponent}>
+                    <Keyboard />
+                </Component>
+                <Component name="icon-file-zip" style={styles.iconComponent}>
+                    <FileZip />
+                </Component>
+                <Component name="icon-file-binary" style={styles.iconComponent}>
+                    <FileBinary />
+                </Component>
+                <Component name="icon-file-copy" style={styles.iconComponent}>
+                    <FileCode />
+                </Component>
+                <Component name="icon-file-directory" style={styles.iconComponent}>
+                    <FileDirectory />
+                </Component>
+                <Component name="icon-file-media" style={styles.iconComponent}>
+                    <FileMedia />
+                </Component>
+                <Component name="icon-file-pdf" style={styles.iconComponent}>
+                    <FilePdf />
+                </Component>
+                <Component name="icon-file-submodule" style={styles.iconComponent}>
+                    <FileSubmodule />
+                </Component>
+                <Component name="icon-file-symlink-directory" style={styles.iconComponent}>
+                    <FileSymlinkDirectory />
+                </Component>
+                <Component name="icon-file-symlink-file" style={styles.iconComponent}>
+                    <FileSymlinkFile />
+                </Component>
+                <Component name="icon-browser" style={styles.iconComponent}>
+                    <Browser />
+                </Component>
+                <Component name="icon-file" style={styles.iconComponent}>
+                    <File />
+                </Component>
+                <Component name="icon-repo-clone" style={styles.iconComponent}>
+                    <RepoClone />
+                </Component>
+                <Component name="icon-repo-force-push" style={styles.iconComponent}>
+                    <RepoForcePush />
+                </Component>
+                <Component name="icon-repo-forked" style={styles.iconComponent}>
+                    <RepoForked />
+                </Component>
+                <Component name="icon-repo-pull" style={styles.iconComponent}>
+                    <RepoPull />
+                </Component>
+                <Component name="icon-repo-push" style={styles.iconComponent}>
+                    <RepoPush />
+                </Component>
+                <Component name="icon-repo" style={styles.iconComponent}>
+                    <Repo />
+                </Component>
+                <Component name="icon-ruby" style={styles.iconComponent}>
+                    <Ruby />
+                </Component>
+                <Component name="icon-mirror" style={styles.iconComponent}>
+                    <Mirror />
+                </Component>
+                <Component name="icon-server" style={styles.iconComponent}>
+                    <Server />
+                </Component>
+                <Component name="icon-terminal" style={styles.iconComponent}>
+                    <Terminal />
+                </Component>
+                <Component name="icon-radio-tower" style={styles.iconComponent}>
+                    <RadioTower />
+                </Component>
+                <Component name="icon-rss" style={styles.iconComponent}>
+                    <Rss />
+                </Component>
+                <Component name="icon-versions" style={styles.iconComponent}>
+                    <Versions />
+                </Component>
+                <Component name="icon-dependent" style={styles.iconComponent}>
+                    <Dependent />
+                </Component>
+                <Component name="icon-repo-template" style={styles.iconComponent}>
+                    <RepoTemplate />
+                </Component>
+                <Component name="icon-repo-template-private" style={styles.iconComponent}>
+                    <RepoTemplatePrivate />
+                </Component>
+                <Component name="icon-workflow" style={styles.iconComponent}>
+                    <Workflow />
+                </Component>
+                <Component name="workflow-all" style={styles.iconComponent}>
+                    <WorkflowAll />
+                </Component>
             </View>
         </View>
     </Frame>
