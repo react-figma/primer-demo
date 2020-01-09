@@ -8,6 +8,16 @@ import {GitHubMark} from "../../components/icons/GitHubMark";
 import {Markdown} from "../../components/icons/Markdown";
 import {Octoface} from "../../components/icons/Octoface";
 import {Paintcan} from "../../components/icons/Paintcan";
+import {Thumbsdown} from "../../components/icons/Thumbsdown";
+import {Smiley} from "../../components/icons/Smiley";
+import {GistSecret} from "../../components/icons/GistSecret";
+import {Thumbsup} from "../../components/icons/Thumbsup";
+import {Hubot} from "../../components/icons/Hubot";
+import {Organization} from "../../components/icons/Organization";
+import {Person} from "../../components/icons/Person";
+import {Eye} from "../../components/icons/Eye";
+import {EyeClosed} from "../../components/icons/EyeClosed";
+import {Jersey} from "../../components/icons/Jersey";
 
 const styles = StyleSheet.create({
     frame: {
@@ -39,6 +49,23 @@ export const Styleguide30 = (props) => {
                 <Markdown style={styles.iconMargin} />
                 <Octoface style={styles.iconMargin} />
                 <Paintcan style={styles.iconMargin} />
+            </View>
+            <View style={{marginTop: 40}}>
+                <StyleguideSeparatorWrapper>
+                    <StyleguideLabel text="People" />
+                </StyleguideSeparatorWrapper>
+            </View>
+            <View style={styles.iconsLine}>
+                <Thumbsdown style={styles.iconMargin} />
+                <Smiley style={styles.iconMargin} />
+                <GistSecret style={styles.iconMargin} />
+                <Thumbsup style={styles.iconMargin} />
+                <Hubot style={styles.iconMargin} />
+                <Organization style={styles.iconMargin} />
+                <Person style={styles.iconMargin} />
+                <Eye style={styles.iconMargin} />
+                <EyeClosed style={styles.iconMargin} />
+                <Jersey style={styles.iconMargin} />
             </View>
         </View>
     </Frame>
