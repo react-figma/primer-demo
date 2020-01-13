@@ -2,6 +2,7 @@ import * as React from "react";
 import {StyleSheet, View} from "react-native";
 import {colors} from "../../tokens/colors";
 import {spacingScale} from "../../tokens/spacingScale";
+import {FlashText} from "./FlashText";
 
 const styles = StyleSheet.create({
     container: {
@@ -52,3 +53,12 @@ export const Flash = (props: {children: React.ReactNode, isWarn?: boolean, isErr
         </View>
     </View>
 };
+
+export default (props: {children: React.ReactNode, isWarn?: boolean, isError?: boolean, isSuccess?: boolean}) => {
+    const {children, isWarn, isError, isSuccess} = props;
+    return <Flash isError={isError} isWarn={isWarn} isSuccess={isSuccess}>
+        <FlashText isError={isError} isWarn={isWarn} isSuccess={isSuccess}>
+            {children}
+        </FlashText>
+    </Flash>
+}
