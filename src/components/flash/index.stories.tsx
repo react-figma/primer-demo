@@ -4,7 +4,6 @@ import {storiesOf} from "@storybook/react";
 import {boolean, withKnobs, text} from "@storybook/addon-knobs";
 import { withInfo } from '@storybook/addon-info';
 import {defaultBackground} from "../storybook-decorators/DefaultBackground";
-import {FlashText} from "./FlashText";
 
 
 storiesOf('Flash', module)
