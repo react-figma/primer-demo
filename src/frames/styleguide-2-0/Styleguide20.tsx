@@ -1,5 +1,5 @@
 import * as React from "react";
-import {StyleSheet, Frame, View, Text} from "react-figma";
+import {StyleSheet, Frame, View, Text, Component} from "react-figma";
 import {StyleguideLabel} from "../../components/styleguide-label/StyleguideLabel";
 import {StyleguideSeparatorWrapper} from "../../components/styleguide-separator/StyleguideSeparatorWrapper";
 import {PrimaryButton} from "../../components/primary-button/PrimaryButton";
@@ -40,25 +40,51 @@ export const Styleguide20 = (props) => {
                 <StyleguideLabel text="Buttons" />
             </StyleguideSeparatorWrapper>
             <View style={styles.buttonsLine}>
-                <DefaultButton>Button</DefaultButton>
-                <DefaultButton isHover style={styles.buttonMargin}>Hovered button</DefaultButton>
-                <DefaultButton isFocus={} style={styles.buttonMargin}>Focused button</DefaultButton>
-                <DefaultButton isSmall style={styles.buttonMargin}>Small button</DefaultButton>
+                <Component name="button-default">
+                    <DefaultButton>Button</DefaultButton>
+                </Component>
+                <Component name="button-default-hover" style={styles.buttonMargin}>
+                    <DefaultButton isHover >Hovered button</DefaultButton>
+                </Component>
+                <Component name="button-default-focus" style={styles.buttonMargin}>
+                    <DefaultButton isFocus >Focused button</DefaultButton>
+                </Component>
+                <Component name="button-default-small" style={styles.buttonMargin}>
+                    <DefaultButton isSmall >Small button</DefaultButton>
+                </Component>
             </View>
             <View style={styles.buttonsLine}>
-                <PrimaryButton>Primary button</PrimaryButton>
-                <PrimaryButton isFocus style={styles.buttonMargin}>Primary button</PrimaryButton>
-                <PrimaryButton isSmall style={styles.buttonMargin}>Small primary button</PrimaryButton>
+                <Component name="button-primary">
+                    <PrimaryButton>Primary button</PrimaryButton>
+                </Component>
+                <Component name="button-primary-focus" style={styles.buttonMargin}>
+                    <PrimaryButton isFocus>Primary button focus</PrimaryButton>
+                </Component>
+                <Component name="button-primary-small" style={styles.buttonMargin}>
+                    <PrimaryButton isSmall>Small primary button</PrimaryButton>
+                </Component>
             </View>
             <View style={styles.buttonsLine}>
-                <DangerButton>Danger button</DangerButton>
-                <DangerButton isHover style={styles.buttonMargin}>Danger button hover</DangerButton>
-                <DangerButton isSmall style={styles.buttonMargin}>Small danger button</DangerButton>
+                <Component name="button-danger">
+                    <DangerButton>Danger button</DangerButton>
+                </Component>
+                <Component name="button-danger-hover" style={styles.buttonMargin}>
+                    <DangerButton isHover>Danger button hover</DangerButton>
+                </Component>
+                <Component name="button-danger-small" style={styles.buttonMargin}>
+                    <DangerButton isSmall>Small danger button</DangerButton>
+                </Component>
             </View>
             <View style={styles.buttonsLine}>
-                <OutlineButton>Outline button</OutlineButton>
-                <OutlineButton isHover style={styles.buttonMargin}>Outline button hover</OutlineButton>
-                <OutlineButton isSmall style={styles.buttonMargin}>Outline button</OutlineButton>
+                <Component name="button-outline">
+                    <OutlineButton>Outline button</OutlineButton>
+                </Component>
+                <Component name="button-outline-hover" style={styles.buttonMargin}>
+                    <OutlineButton isHover>Outline button hover</OutlineButton>
+                </Component>
+                <Component name="button-outline-small" style={styles.buttonMargin}>
+                    <OutlineButton isSmall>Outline button small</OutlineButton>
+                </Component>
             </View>
             <View style={{marginTop: 40}}>
                 <StyleguideSeparatorWrapper>
