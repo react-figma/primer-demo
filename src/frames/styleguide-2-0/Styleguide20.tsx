@@ -92,30 +92,40 @@ export const Styleguide20 = (props) => {
                 </StyleguideSeparatorWrapper>
             </View>
             <View style={styles.alertLine}>
-                <Flash>
-                    <FlashText>Flash message goes here.</FlashText>
-                </Flash>
+                <Component name="flash">
+                    <Flash>
+                        <FlashText>Flash message goes here.</FlashText>
+                    </Flash>
+                </Component>
             </View>
             <View style={styles.alertLine}>
-                <Flash>
-                    <FlashText>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</FlashText>
-                    <FlashText style={{marginTop: 10}}>And this is another paragraph.</FlashText>
-                </Flash>
+                <Component name="flash-two-lines">
+                    <Flash>
+                        <FlashText>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</FlashText>
+                        <FlashText style={{marginTop: 10}}>And this is another paragraph.</FlashText>
+                    </Flash>
+                </Component>
             </View>
             <View style={styles.alertLine}>
-                <Flash isWarn>
-                    <FlashText isWarn>Flash message goes here.</FlashText>
-                </Flash>
+                <Component name="flash-warn">
+                    <Flash isWarn>
+                        <FlashText isWarn>Flash message goes here.</FlashText>
+                    </Flash>
+                </Component>
             </View>
             <View style={styles.alertLine}>
-                <Flash isError>
-                    <FlashText isError>Flash message goes here.</FlashText>
-                </Flash>
+                <Component name="flash-error">
+                    <Flash isError>
+                        <FlashText isError>Flash message goes here.</FlashText>
+                    </Flash>
+                </Component>
             </View>
             <View style={styles.alertLine}>
-                <Flash isSuccess>
-                    <FlashText isSuccess>Flash message goes here.</FlashText>
-                </Flash>
+                <Component name="flash-success">
+                    <Flash isSuccess>
+                        <FlashText isSuccess>Flash message goes here.</FlashText>
+                    </Flash>
+                </Component>
             </View>
         </View>
     </Frame>
