@@ -15,23 +15,12 @@ const styles = StyleSheet.create({
     }
 } as any);
 
-const hoverStyles = StyleSheet.create({
-    text: {
-        color: colors.white
-    },
-    background: {
-        backgroundColor: colors.white,
-        borderColor: colors.green,
-        borderWidth: 2
-    }
-});
-
 export interface IDangerButtonCommon extends IButtonCommon {}
 
 export const DangerButton = (props: {style?: any} & IDangerButtonCommon) => {
     const {style, children, isHover, isSmall} = props;
     return <View style={[styles.container, isSmall && commonButtonSmallStyle.container, style]}>
-        <View style={[styles.background, isHover && hoverStyles.background]} />
-        <Text style={[styles.text, isSmall && commonButtonSmallStyle.text, isHover && hoverStyles.text]}>{children}</Text>
+        <View style={[styles.background]} />
+        <Text style={[styles.text, isSmall && commonButtonSmallStyle.text]}>{children}</Text>
     </View>
 };
