@@ -15,12 +15,22 @@ const styles = StyleSheet.create({
     }
 } as any);
 
+const hoverStyles= StyleSheet.create({
+    text: {
+        color: "#fff"
+    },
+    background: {
+        backgroundColor: "#0366d6",
+        borderColor: "#0366d6"
+    }
+});
+
 export interface IOutlineButtonCommon extends IButtonCommon {}
 
 export const OutlineButton = (props: {style?: any} & IOutlineButtonCommon) => {
     const {style, children, isHover, isSmall} = props;
     return <View style={[styles.container, isSmall && commonButtonSmallStyle.container, style]}>
-        <View style={[styles.background]} />
-        <Text style={[styles.text, isSmall && commonButtonSmallStyle.text]}>{children}</Text>
+        <View style={[styles.background, isHover && hoverStyles.background]} />
+        <Text style={[styles.text, isSmall && commonButtonSmallStyle.text, isHover && hoverStyles.text]}>{children}</Text>
     </View>
 };

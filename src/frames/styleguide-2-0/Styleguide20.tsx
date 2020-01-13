@@ -52,10 +52,12 @@ export const Styleguide20 = (props) => {
             </View>
             <View style={styles.buttonsLine}>
                 <DangerButton>Danger button</DangerButton>
+                <DangerButton isHover style={styles.buttonMargin}>Danger button hover</DangerButton>
                 <DangerButton isSmall style={styles.buttonMargin}>Small danger button</DangerButton>
             </View>
             <View style={styles.buttonsLine}>
                 <OutlineButton>Outline button</OutlineButton>
+                <OutlineButton isHover style={styles.buttonMargin}>Outline button hover</OutlineButton>
                 <OutlineButton isSmall style={styles.buttonMargin}>Outline button</OutlineButton>
             </View>
             <View style={{marginTop: 40}}>
