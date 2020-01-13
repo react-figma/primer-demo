@@ -41,6 +41,8 @@ export const Styleguide20 = (props) => {
             </StyleguideSeparatorWrapper>
             <View style={styles.buttonsLine}>
                 <DefaultButton>Button</DefaultButton>
+                <DefaultButton isHover style={styles.buttonMargin}>Hovered button</DefaultButton>
+                <DefaultButton isFocus={} style={styles.buttonMargin}>Focused button</DefaultButton>
                 <DefaultButton isSmall style={styles.buttonMargin}>Small button</DefaultButton>
             </View>
             <View style={styles.buttonsLine}>

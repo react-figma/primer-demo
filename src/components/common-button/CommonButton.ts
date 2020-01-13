@@ -47,5 +47,6 @@ export interface IButtonCommon {
     children: string;
     isDisabled?: boolean;
     isHover?: boolean;
+    isFocus?: boolean;
     isSmall?: boolean
 }

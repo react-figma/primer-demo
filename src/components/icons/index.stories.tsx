@@ -58,11 +58,13 @@ import {RepoTemplate} from "./RepoTemplate";
 import {RepoTemplatePrivate} from "./RepoTemplatePrivate";
 import {Workflow} from "./Workflow";
 import {WorkflowAll} from "./WorkflowAll";
+import {defaultBackground} from "../storybook-decorators/DefaultBackground";
 
 
 storiesOf('Icons', module)
     .addDecorator(withInfo)
     .addDecorator(withKnobs)
+    .addDecorator(defaultBackground)
     .add('Gist Logo', () => <GistLogo/>)
     .add('GitHub Logo', () => <GitHubLogo/>)
     .add('GitHub Mark', () => <GitHubMark/>)
